@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendiendo en Comunidad</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/lamparita.ico" />
+
+</head>
+
+<body>
+    
+    <header class="header">
+        <a href="index.html" class="logo"><img src="img/Logo.png" alt="imagen logo"></a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li> <a href="registro.html">Iniciar sesión</a> </li>
+            <li><a href="registro.html">Registrate</a> </li>
+            <li><a href="#">Aportá a la Comunidad</a> </li>
+            <li><a href="#">Cursos</a> </li>
+            <li><a href="#">Otros Recursos</a> </li>
+        </ul>
+    </header>
+    <main>
+        <section class="banner">
+            <img class="banner-img" src="img/educaciónonline.png" alt="educaciónonline">
+
+            <div class="bienvenida">
+                <p>Aprendé online de forma gratis y sé parte de la comunidad.</p>
+            </div>
+
+        </section>
+
+        <section class="cursos">
+            <h2 class="cursos-titulo">¿Qué te gustaría aprender?</h2>
+            <div class="tipos_cursos container">
+                <a href="detalle-curso.html" class="curso">
+                    <img src="./img/diseñoweb.png" alt="diseñoweb" class="curso-img">
+                    <div class="curso-titulo">
+                        Programación
+                    </div>
+                </a>
+                <a href="detalle-curso.html" class="curso">
+                    <img src="./img/diseñografico.png" alt="diseñoweb" class="curso-img">
+                    <div class="curso-titulo">
+                        Diseño Gráfico
+                    </div>
+                </a>
+                <a href="detalle-curso.html" class="curso">
+                    <img src="./img/Excel.png" alt="diseñoweb" class="curso-img">
+                    <div class="curso-titulo">
+                        Excel
+                    </div>
+                </a>
+            </div>
+
+
+        </section>
+
+        <section class="puntuados">
+            <h2 class="puntuados-titulo">Los cursos mejor puntuados por la comunidad</h2>
+            <div class="tipos_cursos container">
+                <div class="puntuado-curso">
+                    <iframe class="puntuado-iframe" src="https://www.youtube.com/embed/videoseries?list=PLL0TiOXBeDah92BouG1YTuej0eJj6o5Sl"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                    <div class="puntuacion">
+                        <p class="puntuacion-titulo-cursos">Curso de Python</p>
+                        <img src="./img/puntuación5.png" alt="" class="puntacion-img">
+                    </div>
+                </div>
+                <div class="puntuado-curso">
+                    <iframe class="puntuado-iframe" src="https://www.youtube.com/embed/videoseries?list=PLPl81lqbj-4Iy7yuRrVLn4V6isOVpvlpl"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                    <div class="puntuacion">
+                        <p class="puntuacion-titulo-cursos">Curso de Javascript</p>
+                        <img src="./img/puntuación5.png" alt="" class="puntacion-img">
+                    </div>
+                </div>
+                <div class="puntuado-curso">
+                    <iframe class="puntuado-iframe" src="https://www.youtube.com/embed/videoseries?list=PLR_F5SrmCXsQnG3xj_sRutX63Dzuhr38-"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                    <div class="puntuacion">
+                        <p class="puntuacion-titulo-cursos">Curso de Java</p>
+                        <img src="./img/puntuación5.png" alt="" class="puntacion-img">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="contacto">
+            <h2 class="contacto-titulo">Contactate</h2>
+            <div class="container d-flex-row">
+                <div class="alert alert-danger hide" role="alert" id="contacto-form-alert">
+                </div>
+                <form action="" class="contacto-form" onsubmit="enviarFormularioContacto(event);">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" class="input-form"><br>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" class="input-form"><br>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" id="mensaje" class="input-form"></textarea><br>
+                    <button type="submit" class="btn btn-enviar">Enviar</button>
+                </form>
+                <div class="contacto-info">
+                    <img src="img/educaciónonline.png" alt="educaciónonline">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="d-grid-footer">
+            <div class="logo">
+                <img src="img/Logo.png" alt="imagen logo">
+            </div>
+            <div class="footer-texto">
+                <p>Se parte de esta comunidad</p>
+            </div>
+            <div class="footer-redes-sociales">
+                <ul class="list-redes-sociales">
+                    <li class="item-redes-sociales">
+                        <a href=""><i class="fab fa-facebook-square fa-2x"></i></a>
+                    </li>
+                    <li class="item-redes-sociales">
+                        <a href=""><i class="fab fa-instagram-square fa-2x"></i></a>
+                    </li>
+                    <li class="item-redes-sociales">
+                        <a href=""><i class="fab fa-youtube fa-2x"></i></a>
+                    </li>
+                    <li class="item-redes-sociales">
+                        <a href=""><i class="fab fa-tiktok fa-2x"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>
